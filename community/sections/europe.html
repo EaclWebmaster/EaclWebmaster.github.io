@@ -1,0 +1,32 @@
+---
+title: NLP in Europe
+superpage: community
+page_order: 1
+reference: european_community
+---
+
+{% assign headers = "Organisation	| President | Contact | Regional Scope | Conference | Journal" %}
+
+{% capture data %}
+<a href="http://www.ai-lc.it/">AILC (Italian Association of Computational Linguistics)</a> | Bernardo Magnini |	<a href = "mailto:magnini@fbk.eu">magnini@fbk.eu</a> |Italy	| CLiC-it	| <a href = "http://www.ai-lc.it/en/journal/">www.ai-lc.it/en/journal/</a>
+<a href = "https://www.let.rug.nl/vannoord/Clin/">CLIN (Computational Linguistics in the Netherlands)</a> |	Gertjan Van Noord	| <a href = "mailto:g.j.m.van.noord@rug.nl">g.j.m.van.noord@rug.nl</a> | <ul style="list-style-type:disc;"> <li> Netherlands <li/> Belgium (Dutch) | CLIN |	<a href = "http://www.clinjournal.org">www.clinjournal.org</a>
+<a href = "http://www.gscl.org/">GSCL (German Society for Computational Linguistics & Language Technology)</a> | Torsten Zesch |	<a href = "mailto:torsten.zesch@uni-due.de">torsten.zesch@uni-due.de</a>	| Germany	| KONVENS |	<a href="http://www.jlcl.org">www.jlcl.org</a>
+<a href = "http://omilia.uio.no/nealt/">NEALT (North European Association for Language Technology)</a> |	<ul style="list-style-type:disc;"> <li/> Andrejs Vasiljevs <li/> Yvonne Adesam <ul/> | <ul style="list-style-type:disc;">	<li/> <a href = "mailto:Andrejs@Tilde.lv">Andrejs@Tilde.lv</a> <li/> <a href = "mailto:yvonne.adesam@gu.se">yvonne.adesam@gu.se</a>	<ul/> | <ul style="list-style-type:disc;"> <li/> Finland <li/> Sweden <li/> Norway <li/> Denmark <li/> Faroe Islands <li/> Greenland <li/> Iceland <li/> Estonia <li/> Latvia <li/> Lithuania <li/> Northwest Russia </ul>|	NODALIDA	| <a href = "http://aclanthology.coli.uni-saarland.de/venues/nodalida">aclanthology.coli.uni-saarland.de/venues/nodalida</a>
+<a href = "http://www.atala.org/">ATALA (Association pour le Traitement Automatique des Langues)</a> |	<ul style="list-style-type:disc;"> <li/> Patrick Paroubek <li/> Emmanuel Morin <ul/> |	<ul style="list-style-type:disc;"> <li/> <a href = "mailto:pap@limsi.fr">pap@limsi.fr</a> <li/><a href = "mailto:Emmanuel.Morin@univ-nantes.fr">Emmanuel.Morin@univ-nantes.fr</a>	<ul/> | France | TALN |	<a href = "http://www.atala.org/revuetal">www.atala.org/revuetal</a>
+TALN CPERM | Sophie Rosset | <a href = "mailto:sophie.rosset@limsi.fr">sophie.rosset@limsi.fr</a>
+<a href = "http://www.sdjt.si">SDJT (Slovenian Language Technologies Society)</a> |	<ul style="list-style-type:disc;"> <li/> Simon Dobrišek <li/> Kaja Dobrovoljc <ul/>	| <ul style="list-style-type:disc;"> <li/> <a href = "mailto:simon.dobrisek@fe.uni-lj.si">simon.dobrisek@fe.uni-lj.si</a> <li/> <a href = "mailto:kaja.dobrovoljc@ijs.si">kaja.dobrovoljc@ijs.si</a> <ul/> | Slovenia | Biannual conference
+<a href = "http://www.sepln.org/">SEPLN (Spanish Society for Natural Language Processing)</a>	| L. Alfonso Ureña López	| <a href = "mailto:laurena@ujaen.es">laurena@ujaen.es</a> |	Spain |	SEPLN	| <a href="http://www.sepln.org/home-3/journal/?lang=en">www.sepln.org/home-3/journal/?lang=en</a>
+<a href="http://www.propor.org/">PROPOR (Computational Processing of the Portuguese Language)</a>	| Aline Villavicencio	| <a href = "mailto:alinev@gmail.com">alinev@gmail.com</a>	| <ul style="list-style-type:disc;"> <li/> Portugal <li/> Brazil <ul/> | PROPOR
+<a href="http://clip.ipipan.waw.pl/">CLIP (Computational Linguistics in Poland)</a>	| | | resources
+<a href="https://www.clarin.eu/">CLARIN</a> | <a href = "https://www.clarin.eu/governance/board-directors">Board of Directors</a> | <a href = "mailto:clarin@clarin.eu">clarin@clarin.eu</a>
+<a href = "http://www.meta-net.eu/">META-NET</a>	| Georg Rehm | <a href = "mailto:georg.rehm@dfki.de">georg.rehm@dfki.de</a> |	Europe |	META-Forum
+<a href="http://www.elda.org/">ELRA/ELDA (European Language Resources Association)</a> | Henk van den Heuvel | <a href = "mailto:info@elda.org">info@elda.org</a> | Europe | LREC
+<a href="http://lml.bas.bg/ranlp2019/">RANLP</a> |	Ruslan Mitkov | <a href = "mailto:ranlp2019@lml.bas.bg">ranlp2019@lml.bas.bg</a> | International | RANLP
+<a href="https://www.swisstext.org/">SwissText</a> | Mark Cieliebak	| <a href = "mailto:ciel@zhaw.ch">ciel@zhaw.ch</a> |	Switzerland	| SwissText
+<a href="http://grammars.grlmc.com/SLSP2017/">SLSP</a> |	David Silva	| <a href = "mailto:david@irdta.eu">david@irdta.eu</a> |	International |	SLSP
+<a href="https://www.tsdconference.org/tsd2019/">TSD</a> | | <a href = "mailto:tsd2019@tsdconference.org">tsd2019@tsdconference.org</a> | International | TSD
+<a href="http://www.clef-initiative.eu/">CLEF</a> | | | International | CLEF
+<a href="https://pan.webis.de/">PAN</a> |	Martin Potthast | <a href = "mailto:pan@webis.de">pan@webis.de</a> | International | PAN
+{% endcapture %}
+
+{% include michael_table.html headers=headers data=data separator="|" %}

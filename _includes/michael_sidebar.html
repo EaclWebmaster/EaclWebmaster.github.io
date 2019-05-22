@@ -1,0 +1,21 @@
+
+<!-- Sidebar -->
+<div id="sidebar-container" class="4u sidenav">
+<div id="sidebar" class="eacl-sidebar">
+	<section>
+		<header>
+			<h2>{{ include.sidebar_title }}</h2>
+		</header>
+		<div class="row">
+			<section class="6u">
+				<ul class="default" style="padding: 0em 0em 0em 0em;">
+                                {% for section in include.sections %}
+					<li><a href="#{{section.reference}}">{{ section.title }}</a></li>
+                                {% endfor %}
+				</ul>
+			</section>
+		</div>
+	</section>
+</div>
+</div>
+

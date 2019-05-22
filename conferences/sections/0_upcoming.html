@@ -1,0 +1,15 @@
+---
+title: Upcoming
+superpage: conferences
+page_order: 1
+reference: upcoming
+---
+{% assign headers = "Conference | Location" %}
+
+{% capture data %}
+<a href=http://www.acl2019.org/EN/index.xhtml>ACL 2019</a> | Florence, Italy
+EACL 2020 | To be decided
+
+{% endcapture %}
+
+{% include michael_table.html headers=headers data=data separator="|" %}

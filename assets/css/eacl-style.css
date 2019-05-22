@@ -1,0 +1,119 @@
+.section-header
+{
+	margin: 10px 0px;
+        line-height: 1.1;
+}
+
+.featured-item
+{
+	height: 420px;
+}
+
+.featured-item-pennant
+{
+	height: 170px;
+}
+
+.featured-item-text
+{
+	height: 145px;
+}
+
+.logo-image-background
+{
+	position: absolute;
+	z-index: 1;
+	height: 200px;
+}
+
+#logo-wrapper {
+	display: inline-block;
+}
+
+.logo-image-wrapper
+{
+	float: left;
+	height: 100px;
+	width: 150px;
+	text-align: left;
+}
+
+.logo-text-wrapper, .logo-text-wrapper-mobile
+{
+	float: left;
+	text-align: left;
+	font-family: "Open Sans";
+	font-size: 24px;
+	color: #FFF;
+	margin: 13px 25px;
+	height: 74px;
+	vertical-align: middle;
+}
+
+.logo-text-wrapper-mobile
+{
+	font-size: 38px;
+	margin: 38px 13px;
+	height: 26px;
+}
+
+.logo-image-logo
+{
+	position: absolute;
+	z-index: 2;
+	opacity: 0.5;
+	height: 100px
+}
+
+.sidenav {
+  z-index: 1;
+  overflow: visible;
+  padding-top: 20px;
+  min-height: 1px;
+  width: 300px;
+}
+
+.eacl-sidebar {
+  width: inherit;
+}
+
+.sticky{
+  top: 6em;
+  position: fixed;
+}
+
+.button {
+  background: #3366ff;
+}
+
+a {
+  color: #3366ff;
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: disc;
+		padding-left: 20px;
+}
+
+ol {
+	  list-style-type: decimal;
+		padding-left: 20px;
+    /* counter-reset: list; */
+}
+/* ol > li {
+    list-style: none;
+    position: relative;
+}
+ol > li:before {
+    counter-increment: list;
+    content: "(" counter(list, decimal) ") ";
+} */
+
+.eacl-subheader {
+  font-weight: bold;
+}
+
+#main {
+  padding: 6em 0em 10em 0em;
+}

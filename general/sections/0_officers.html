@@ -1,0 +1,28 @@
+---
+title: Current EACL officers
+superpage: general
+page_order: 3
+reference: officers
+---
+{% assign headers = "Position | Officers | Affiliation | Contact" %} 
+
+{% capture data %}
+Chair| <a href="https://homepages.inf.ed.ac.uk/sgwater/">Sharon Goldwater</a> | University of Edinburgh, UK | <a href="mailto:eacl-chair@aclweb.org">eacl-chair@aclweb.org</a>
+Secretary | <a href="http://staffwww.dcs.shef.ac.uk/people/L.Specia/">Lucia Specia</a> | Imperial College and University of Sheffield, UK | <a href="mailto:eacl-secretary@aclweb.org">eacl-secretary@aclweb.org</a>
+Treasurer | <a href="https://www.um.edu.mt/profile/claudiaborg">Claudia Borg</a> | University of Malta | <a href="mailto:eacl-treasurer@aclweb.org">eacl-treasurer@aclweb.org</a>
+Past Treasurer | <a href="https://www.um.edu.mt/profile/mikerosner">Mike Rosner</a> | University of Malta 	
+Chair-elect | <a href="http://cs.haifa.ac.il/~shuly">Shuly Wintner</a> | University of Haifa, Israel
+Advisory Board ^ rowspan="4" valign="top" | <a href="http://angelikilazaridou.github.io/">Angeliki Lazaridou</a> | DeepMind, Uk
+<a href="https://bplank.github.io/">Barbara Plank</a> | IT University of Copenhagen, Denmark
+<a href="https://www.qcri.org/our-people/bio?pid=35&par=acc&name=PreslavNakov/">Preslav Nakov</a> | QCRI, Qatar
+<a href="http://ivan-titov.org/">Ivan Titov</a> | University of Edinburgh, UK
+Nominating Committee  ^ rowspan="4" valign="top" | <a href="https://sites.google.com/site/stephenclark609/">Stephen Clark</a> | DeepMind, UK
+<a href="https://www.cl.uni-heidelberg.de/~nastase/">Vivi Nastase</a> | University of Heidelberg, Germany
+<a href="">Lluís Màrquez</a> | Amazon
+<a href="http://www.gcdh.de/en/people/team/caroline-sporleder">Caroline Sporleder</a> | GCDH, Göttingen
+Student Board  ^ rowspan="3" valign="top" | <a href="https://feralvam.github.io/">Fernando Alva-Manchego</a> | University of Sheffield, UK
+<a href="http://www.uva.nl/en/profile/s/c/m.s.schlichtkrull/m.s.schlichtkrull.html/">Michael Schlichtkrull</a> | University of Amsterdam, The Netherlands
+<a href="https://madhumitasushil.github.io/">Madhumita Sushil</a> | University of Antwerp, Belgium
+{% endcapture %}
+
+{% include michael_table.html headers=headers data=data separator="|" %}

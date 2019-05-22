@@ -1,0 +1,29 @@
+---
+title: Previous
+superpage: conferences
+page_order: 2
+reference: previous
+---
+{% assign headers = "Conference | Location" %}
+
+{% capture data %}
+
+<a href="http://www.eacl2017.org">EACL 2017</a>  | Valencia, Spain
+<a href="http://www.eacl2014.org">EACL 2014</a> | Gothenburg, Sweden
+<a href="http://aclweb.org/mirror/eacl2012/">EACL 2012</a> | Avignon, France
+EACL 2009 | Athens, Greece
+<a href="http://eacl06.fbk.eu/index.htm">EACL 2006</a> | Trento, Italy
+<a href="http://www.conferences.hu/EACL03/">EACL 2003</a> | Budapest, Hungary
+EACL 1999 | Bergen, Norway
+EACL-ACL 1997 | Madrid, Spain
+EACL 1995 | Dublin, Ireland
+EACL 1993 | Utrecht, The Netherlands
+EACL 1991 | Berlin, Germany
+EACL 1989 | Manchester, England
+EACL 1987 | Copenhagen, Denmark
+EACL 1985 | Geneva, Switzerland
+EACL 1983 | Pisa, Italy
+
+{% endcapture %}
+
+{% include michael_table.html headers=headers data=data separator="|" %}

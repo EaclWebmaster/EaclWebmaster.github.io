@@ -1,0 +1,31 @@
+---
+title: Archives
+layout: default
+---
+
+{% assign sections = site.pages | where: "superpage", "archives" | sort: "page_order" %}  
+
+<!-- Main -->
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				{% include michael_sidebar.html sections=sections sidebar_title=page.title %}
+
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+                                        {% for section in sections %}
+
+					<section>
+						<header>
+							<h2 class=section-header id={{section.reference}}>{{section.title}}</h2>
+						</header>
+
+                                                {{section.content}}
+                                        </section>
+                                        {% endfor %} 
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- /Main -->
+

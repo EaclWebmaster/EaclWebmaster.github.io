@@ -1,0 +1,38 @@
+{% assign elements = include.data | newline_to_br | strip | split: '<br />' %}
+{% assign headers = include.headers | split: include.separator %}
+
+{% if include.skip_header %}
+    {% assign should_make_header = false %}
+{% else %}
+    {% assign should_make_header = true %}
+{% endif %}
+    
+
+<table class="eacl-table">
+{% if should_make_header %}
+    <tr class="eacl-table-row">
+    {% for header in headers %}
+        <th class="eacl-table-header">{{ header | strip }}</th>
+    {% endfor %}
+    </tr>
+{% endif %}
+{% for raw_element in elements %}
+    {% assign element = raw_element | strip %}
+    {% unless element == "" %}
+    <tr class="eacl-table-row">
+    {% assign fields = element | split: include.separator %}
+    {% for header in headers %}
+        {% assign lookup = forloop.index | minus:1 %}
+        {% assign cell_output_parts = fields[lookup] | strip | split: '^' %}
+        {% assign cell_output = cell_output_parts[0] | strip %}
+        {% assign cell_attributes = cell_output_parts[1] %}
+        {% if cell_output == "" %}
+            <td class="eacl-table-cell eacl-table-empty-cell" data-label="{{ header | strip }}" {{cell_attributes}}>{{ cell_output }}</td>
+        {% else %}
+            <td class="eacl-table-cell" data-label="{{ header | strip }}" {{cell_attributes}}>{{ cell_output }}</td>
+        {% endif %}
+    {% endfor %}
+    </tr>
+   {% endunless %}
+{% endfor %}
+</table>
