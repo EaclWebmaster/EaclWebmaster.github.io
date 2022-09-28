@@ -6,7 +6,7 @@
 
 .featured-item
 {
-	height: 420px;
+	height: 470px; /* 420px */
 }
 
 .featured-item-pennant
@@ -16,7 +16,7 @@
 
 .featured-item-text
 {
-	height: 145px;
+	height: 195px; /* 145px */
 }
 
 .logo-image-background
